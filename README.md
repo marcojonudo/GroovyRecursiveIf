@@ -40,9 +40,9 @@ Recursive if structure:
     // Closures with a single parameter
     String getNValue(int n) {
         ArrayList<Closure> paramsConditions = [
-            { int n -> n == 1 ? 'x' : null },
-            { int n -> n == 2 ? 'y' : null },
-            { z }
+            { int n -> n == 1 ? 'I am the if!' : null },
+            { int n -> n == 2 ? 'I am the else if!' : null },
+            { 'I am the else!' }
         ]
         
         String value = Utils.recursiveIf(paramsConditions, n)
@@ -53,9 +53,9 @@ Recursive if structure:
     // Closures with several parameters
     String getNValue(int n) {
         ArrayList<Closure> listParamsConditions = [
-            { int n1, int n2 -> n1 == 1 && n2 == 1 ? 'x' : null },
-            { int n1, int n2 -> n1 == 2 && n2 == 2 ? 'y' : null },
-            { z }
+            { int n1, int n2 -> n1 == 1 && n2 == 1 ? 'I am the if!' : null },
+            { int n1, int n2 -> n1 == 2 && n2 == 2 ? 'I am the else if!' : null },
+            { 'I am the else!' }
         ]
         ArrayList<Integer> params = [n, n]
         
