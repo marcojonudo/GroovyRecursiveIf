@@ -16,17 +16,19 @@ class Utils {
      * else if (n == 2) return 'y'
      * else return 'z'
      *
-     * List<Closure> conditions = [
+     * ArrayList<Closure> conditions = [
      *     { n == 1 ? 'x' : null },
      *     { n == 2 ? 'y' : null },
      *     { z }
      * ]
-     * List<Closure> paramsConditions = [
+     *
+     * ArrayList<Closure> paramsConditions = [
      *     { int n -> n == 1 ? 'x' : null },
      *     { int n -> n == 2 ? 'y' : null },
      *     { z }
      * ]
-     * List<Closure> listParamsConditions = [
+     *
+     * ArrayList<Closure> listParamsConditions = [
      *     { int n1, int n2 -> n1 == 1 && n2 == 1 ? 'x' : null },
      *     { int n1, int n2 -> n1 == 2 && n2 == 2 ? 'y' : null },
      *     { z }
